@@ -5,12 +5,14 @@ const RandomArray = (range) => {
         size = range * 2;
     }
     for (let i = 0; i < size; i++) {
+    for (let i = 0; i < 55; i++) {
         let number = Math.floor((Math.random() * (range * 2)) - range);
         if (!random.includes(number)) {
             random.push(number);
         }
     }
-    return random;
+}
+return random;
 }
 
 const outputArray = (array = null, sortObj = null ) => {
@@ -49,16 +51,15 @@ const sortArrayBySelection = (array, choice) => {
         array[min] = temp;
     }
     return array;
-};
+}
 
 const task5 = () => {
     // true - ascending sort, false - descending sort
     const ascendingSort = true;
 
-    const array = RandomArray(25);
+    const array = RandomArray(45);
     outputArray(array);
     
     let sortedArray = sortArrayBySelection(array,ascendingSort);
     outputArray(null , {array: sortedArray, choice:ascendingSort});
 }
-
