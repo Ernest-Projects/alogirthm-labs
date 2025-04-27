@@ -8,7 +8,6 @@ class Node {
     }
 }
 
-
 class BinarySearchTree {
     constructor () {
         this.root = null;
@@ -40,7 +39,6 @@ class BinarySearchTree {
             }
         }
     }
-
 
     remove(data) {
         this.root = this.removeNode(this.root, data);
