@@ -1,5 +1,3 @@
-
-
 class Node {
     constructor (data) {
         this.data = data;
@@ -109,7 +107,7 @@ class BinarySearchTree {
                 if (setStr.size === 1) {
                     node.data = 0;
             }
-         }   
+         }
          this.changeToZero(node.right);
         }
     }
@@ -124,7 +122,7 @@ class BinarySearchTree {
             console.log("Node:", node.data, "; Sum of laft: ",sumOfLeft, "; sum of rigth: ",sumOfRight, "\n");
         }
         return node.data + sumOfLeft + sumOfRight;
-    }
+    }    
     addRandomInTree(max) {
         return Math.floor(Math.random() * (max * 2)) - max;
     }
