@@ -191,8 +191,8 @@ function task7 () {
     }
      
     const GraphVariant3 = {
-        A: {B: 10, C: 6, D:11, F:1 },
-        B: {A: 10, F: 11, D:8},
+        A: {F: 2, B: 5, D:5, C:7 },
+        B: {F: 10, F: 11, D:8},
         C: {A: 6, E: 2, F:4 },
         D: {E: 2, A:11, B:8 },
         E: {C: 2, D:2, F:2 },
@@ -209,7 +209,6 @@ function task7 () {
         F: {A: 1, B: 11, E:2, C:4 }
     }
 
-    console.log(mainDijkstra(GraphVariant2, "A"));
+    console.log(mainDijkstra(GraphVariant4, "A"));
 }
-
 task7();
